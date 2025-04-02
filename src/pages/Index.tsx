@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import BrandDecision from '@/components/game/BrandDecision';
@@ -8,6 +7,8 @@ import ResultsDisplay from '@/components/game/ResultsDisplay';
 import GameControls from '@/components/game/GameControls';
 import HistoryTable from '@/components/game/HistoryTable';
 import { useToast } from '@/components/ui/use-toast';
+import { Button } from '@/components/ui/button';
+import { ExternalLink } from 'lucide-react';
 
 // Définition de la matrice des gains
 const payoffMatrix = {
@@ -117,9 +118,24 @@ const Index = () => {
     setIsPlaying(true);
   };
 
+  const openInNewTab = () => {
+    window.open(window.location.href, '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container py-8">
+        <div className="flex justify-end mb-4">
+          <Button 
+            variant="outline" 
+            onClick={openInNewTab} 
+            className="flex items-center gap-2"
+          >
+            <ExternalLink size={16} />
+            Ouvrir en plein écran
+          </Button>
+        </div>
+        
         <Card className="mb-6">
           <CardHeader className="text-center">
             <CardTitle className="text-3xl">Stratégie Optimale pour les Promotions</CardTitle>
