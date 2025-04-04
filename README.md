@@ -1,8 +1,55 @@
+
 # Welcome to your Lovable project
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/97ec86a8-23a4-43f7-a602-3522abf316ba
+
+## Setting up in VS Code
+
+To work with this project in VS Code, follow these steps:
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (version 16.x or higher)
+- [Git](https://git-scm.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+### Step 1: Clone the repository
+```sh
+# Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+```
+
+### Step 2: Install VS Code extensions (recommended)
+For the best development experience, install these VS Code extensions:
+- ESLint
+- Prettier
+- Tailwind CSS IntelliSense
+- ES7+ React/Redux/React-Native snippets
+
+### Step 3: Install project dependencies
+```sh
+# Install the necessary dependencies.
+npm i
+```
+
+### Step 4: Start the development server
+```sh
+# Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+The application will be available at `http://localhost:8080`
+
+## Project structure
+- `/src/components/game/` - Game-specific components
+- `/src/components/ui/` - UI components from shadcn
+- `/src/hooks/` - Custom React hooks
+- `/src/pages/` - Page components
+- `/src/lib/` - Utility functions
 
 ## How can I edit this code?
 
